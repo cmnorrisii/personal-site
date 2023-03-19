@@ -1,0 +1,72 @@
+* {
+    text-align: center;
+    
+}
+
+div {
+    margin: 20px 40px;
+}
+
+body {
+    background-color: lightsteelblue;
+    font-size: 1.5em
+}
+
+p {
+    padding: 0 25px;
+}
+
+.about-me {
+    border: 2px solid black;
+    background-color: whitesmoke;
+   
+}
+
+.stack-container{
+    border: 2px solid black;
+    background-color: whitesmoke;
+
+}
+.tech-stack {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-left: 0;
+    margin-right: 0;
+}
+ul {
+    list-style: none;
+    padding: 10px 0px;
+    flex: 1;
+
+}
+
+.projects-container{
+    border: 2px solid black;
+    background-color: whitesmoke;
+}
+.projects-container img {
+    height: 150px; 
+    width: 150px;
+}
+.projects {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: whitesmoke;
+}
+
+
+
+@media (max-width: 500px) {
+    div {
+      margin: 10px;
+    }
+    img {
+        width: 100%;
+        height: 100%;
+    }
+    .projects, .tech-stack {
+        flex-direction: column;
+        align-items: center;
+    }
+  }
