@@ -9,6 +9,8 @@ const createDobbySpan = () => {
   const speedMath = Math.random() * 15;
   spanElement.style.setProperty("--speed", `${speedMath}s`);
   spanElement.setAttribute("id", `dobby-span-${startPositionMath}`);
+  spanElement.classList.add(startPositionMath > 50 ? "lupin" : "dobby");
+  //   spanElement.classList.add("lupin");
   const wrapperElement = document.getElementById("dobby");
   wrapperElement.appendChild(spanElement);
   setTimeout(() => {
