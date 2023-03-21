@@ -1,6 +1,7 @@
 * {
     text-align: center;
-    
+    margin: 0;
+    padding: 0;
 }
 
 div {
@@ -9,9 +10,53 @@ div {
 
 body {
     background-color: lightsteelblue;
-    font-size: 1.5em
+    font-size: 1.5em;
+    min-height: 100vh;
 }
+.picture {
+    width:50%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px black;
+}
+.cat-container{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+.cat{
+    position: relative;
+    display: flex;
+    --startPositionY: 100vh;
+    --startPositionX: 100vw;
+    --endPositionY: -50vh;
+    --endPositionX: -50vw;
+    --speed: 5s;
+}
+.cat span {
+    position: absolute;
+    width: 290px;
+    height: 290px;
+    background-size: contain;
+    background-image: url("https://lh3.googleusercontent.com/hr2S81vx3yK8K7nUokX_NB6A2j4olqy0AVe2KzwD0Q1zoqdKptRwLvD9HZq1O0o67lty_LAE7n8-iBwpTdCY6xkN3byi3-UeytmB--w6LRaExDYMV6UB7na-s_pjJwlVsANSdF82eFzDul2J-sDyXQFN3rcEGYv01WRzVR3vL6wZy1u6JTSZ1Ru_nw_j3jwgaSM9ZU5npTiSA3mc1nceXLthy7nD2phbFSy9fBcBW_QIXguGFjMkBt5azhy0BXTNGEMzBvgwKZdDwUx63ywiP4HwGUfanAgdyFZacsZ2Q7o52xLzSUX7_v0CpGzI8HI-WHEE58OkhjgXuLMvNWnDdZia1TAWc-38fFowqYZ-1Ftc7eOHpB0u2EHW1-ThDwLED7AN23zNtT4_kHjKd_fBBwFNiE46TIb6RiydyimuY8nrfxdb7O5gXTjOkjimjJR-hFv26o5ZkJ_SUuD92d_wcTb6buddEsfuzzLkdD0Xp2G-1Jg7ffvZCF0JEmcXDVOtEyxIwVw9T62odwbTck7weKTM7yc_z0XjMXbFGLIsbY5PwoEkpPlhlpAdbmklou26z1xgWBDZUusLaOrogAgibV_uhBWhHXJTk3DtwQHmZZOH7_tksZ4DwcWbmMY1syrA8sdZjoqIQsly_Q_FOyoqbQXdg03Nr0aC9LoKa6aGGDH0xBCu3PMY2TAnCCpp-_q9TUq-JqXY1vL4xjX7M-0am9XUoA5Mwe74_e3mV2ZkA4sZgJWx_qVopVR4YAgCIkxh9zgKOPQh7z5z-39Ap9Z82bPonC1hCKty9AWLQ06eBSBru8EYl-Tb8Z-fTbYLJrDfWo9FmXu9fUR7LIgoTyQWZyhr29k-f2QTnbqd6L6oV3LwvMkuNxiEKyF-5QyDkWk38iY5-2yrYRRSd6GKePi4r1wW1pLsoRtoVUXugB7GX2irUiAx=w320-h315-no?authuser=0");
+    margin: 0 4px;
+    border-radius: 50%;
+    animation: animate var(--speed) linear infinite;
+    z-index: -100;
 
+}
+@keyframes animate {
+    0%
+    {
+    transform: translateY(var(--startPositionY)) translateX(var(--startPositionX));
+
+    }
+    100%
+    {
+    transform: translateY(var(--endPositionY)) translateX(var(--endPositionX));
+    }
+}
 p {
     padding: 0 25px;
 }
@@ -54,9 +99,19 @@ ul {
     justify-content: space-evenly;
     background-color: whitesmoke;
 }
+/* #dobby {
+    animation: 7s infinite linear slidein;
+    rotate: -30deg;
+} */
 
-
-
+@keyframes slidein {
+    0% {
+        transform: translate(0);
+      }
+      100% {
+        transform: translate(-3840px);
+      }
+    }
 @media (max-width: 500px) {
     div {
       margin: 10px;
