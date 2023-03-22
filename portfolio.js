@@ -20,7 +20,7 @@ const createDobbySpan = () => {
 
 setInterval(() => {
   createDobbySpan();
-}, 500);
+}, 1000);
 
 const deleteDobbySpan = (id) => {
   const deleteSpan = document.getElementById(id);
