@@ -2,6 +2,7 @@
     text-align: center;
     margin: 0;
     padding: 0;
+    font-family: 'Permanent Marker', cursive;
 }
 
 div {
@@ -9,12 +10,14 @@ div {
 }
 
 body {
-    background-color: lightsteelblue;
+    background-image: linear-gradient(-45deg, #F31AB8, #471758, #63ECDA,#FB9728, #E54529);
+    background-size: 400% 400%;
+    animation: gradient 30s ease infinite;
     font-size: 1.5em;
     min-height: 100vh;
 }
 .picture {
-    width:50%;
+    width:20%;
     border-radius: 10px;
     box-shadow: 5px 5px 5px black;
 }
@@ -62,6 +65,17 @@ body {
     100%
     {
     transform: translateY(var(--endPositionY)) translateX(var(--endPositionX));
+    }
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
     }
 }
 p {
