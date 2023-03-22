@@ -3,7 +3,7 @@ const createDobbySpan = () => {
   //   spanElement.style.setProperty("--position", `${Math.random() * 100}vh`);
   const startPositionMath = Math.random() * 100;
   spanElement.style.setProperty("--startPositionX", `${startPositionMath}vw`);
-  spanElement.style.setProperty("--startPositionY", `100vh`);
+  spanElement.style.setProperty("--startPositionY", `110vh`);
   spanElement.style.setProperty("--endPositionX", `${Math.random() * 100}vw`);
   spanElement.style.setProperty("--endPositionY", `-50vh`);
   const speedMath = Math.random() * 15;
