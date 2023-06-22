@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.2619d391.css",
+    "main.js": "/static/js/main.d97ff193.js",
+    "static/js/787.a2cb61a6.chunk.js": "/static/js/787.a2cb61a6.chunk.js",
+    "static/media/collectibuddy.gif": "/static/media/collectibuddy.16c40b5c3eb0b2bc0e6b.gif",
+    "static/media/postgresql.png": "/static/media/postgresql.91f40c762ac9d5c38fab.png",
+    "static/media/mysql.png": "/static/media/mysql.167c88550478e6f0f85c.png",
+    "static/media/typescript.png": "/static/media/typescript.d362ac9034fd59687ef3.png",
+    "static/media/ruby.png": "/static/media/ruby.76df93cf57df266746e9.png",
+    "static/media/react.png": "/static/media/react.8a6fc0a24a800d1e0f4a.png",
+    "static/media/rspec.png": "/static/media/rspec.bf1f0fb8530dc6d8167b.png",
+    "static/media/javascript.png": "/static/media/javascript.96a13af0147433eded9b.png",
+    "static/media/nestjs.png": "/static/media/nestjs.e45aa3003ec89d27c958.png",
+    "static/media/rtl.png": "/static/media/rtl.dfb69484fe52a42aa805.png",
+    "static/media/rails.png": "/static/media/rails.cab82fbfaf258fb91197.png",
+    "static/media/jest.png": "/static/media/jest.809768de8350fa5f6a21.png",
+    "static/media/typeorm.png": "/static/media/typeorm.f3094d8aa22bb5198454.png",
+    "static/media/css.webp": "/static/media/css.fef796e10b901158b62d.webp",
+    "static/media/html.avif": "/static/media/html.439046aad567229de705.avif",
+    "index.html": "/index.html",
+    "main.2619d391.css.map": "/static/css/main.2619d391.css.map",
+    "main.d97ff193.js.map": "/static/js/main.d97ff193.js.map",
+    "787.a2cb61a6.chunk.js.map": "/static/js/787.a2cb61a6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2619d391.css",
+    "static/js/main.d97ff193.js"
+  ]
+}
