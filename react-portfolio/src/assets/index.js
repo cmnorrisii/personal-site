@@ -1,0 +1,15 @@
+export const JsImage = require("./images/languages-photos/javascript.png");
+export const CssImage = require("./images/languages-photos/css.webp");
+export const HtmlImage = require("./images/languages-photos/html.avif");
+export const JestImage = require("./images/languages-photos/jest.png");
+export const RailsImage = require("./images/languages-photos/rails.png");
+export const ReactImage = require("./images/languages-photos/react.png");
+export const RspecImage = require("./images/languages-photos/rspec.png");
+export const RubyImage = require("./images/languages-photos/ruby.png");
+export const TsImage = require("./images/languages-photos/typescript.png");
+export const TypeormImage = require("./images/languages-photos/typeorm.png");
+export const NestjsImage = require("./images/languages-photos/nestjs.png");
+export const PostgresqlImage = require("./images/languages-photos/postgresql.png");
+export const MysqlImage = require("./images/languages-photos/mysql.png");
+export const RtlImage = require("./images/languages-photos/rtl.png");
+export const CollectibuddyGif = require("./gifs/collectibuddy.gif");

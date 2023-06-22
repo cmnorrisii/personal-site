@@ -1,0 +1,108 @@
+* {
+  font-family: "Bebas Neue", sans-serif;
+}
+nav {
+  font-size: x-large;
+  padding-inline: 50px;
+  background-color: rgb(52, 35, 166);
+  font-size: 30px;
+}
+nav .navbar-brand {
+  padding-inline: 50px;
+  font-size: 42px;
+}
+.site-body {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-image: linear-gradient(
+    -45deg,
+    #f31ab8,
+    #471758,
+    #63ecda,
+    #fb9728,
+    #e54529
+  );
+  animation: gradient 30s ease infinite;
+  background-size: 400% 400%;
+}
+.component-header {
+  margin-inline: 15%;
+  padding: 7px;
+  padding-left: 15px;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-top: 1px solid black;
+  border-radius: 5px 5px 0px 0px;
+  background-color: rgb(52, 35, 166);
+  color: white;
+  margin-top: 75px;
+}
+.about-me {
+  padding-block: 75px;
+  margin-inline: 15%;
+}
+p {
+  font-size: 36px;
+}
+.bio {
+  margin-inline: 15%;
+  border: 1px solid black;
+  padding: 2.5%;
+  background-color: white;
+}
+.tech-stack {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-inline: 15%;
+  border: 1px solid black;
+  padding: 2.5%;
+  background-color: white;
+}
+.tech-stack-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2.5%;
+}
+.tech-stack-item-image {
+  width: 125px;
+  height: 125px;
+}
+.projects {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-inline: 15%;
+  border: 1px solid black;
+  padding: 2.5%;
+  background-color: white;
+}
+.projects-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2.5%;
+}
+.projects-item-gif {
+  width: 90%;
+  height: 90%;
+}
+.modal-header-footer {
+  background-color: rgb(52, 35, 166);
+  color: white;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
