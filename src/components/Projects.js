@@ -21,7 +21,11 @@ const Projects = () => {
         {myProjects.map((value) => {
           return (
             <div className="projects-item">
-              <img className="projects-item-gif" src={value.gif} />
+              <img
+                className="projects-item-gif"
+                src={value.gif}
+                alt={value.alt}
+              />
               <div className="projects-info">
                 <h3>{value.title}</h3>
                 <p>{value.description}</p>
