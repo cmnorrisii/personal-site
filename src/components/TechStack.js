@@ -15,6 +15,7 @@ import {
   MysqlImage,
   RtlImage,
 } from "../assets";
+import TechStackImage from "./TechStackImage";
 
 const TechStack = () => {
   const knownLanguages = [
@@ -99,11 +100,7 @@ const TechStack = () => {
         {knownLanguages.map((value) => {
           return (
             <div className="tech-stack-item">
-              <img
-                className="tech-stack-item-image"
-                src={value.image}
-                alt={value.alt}
-              />
+              <TechStackImage value={value} />
               <div className="tech-stack-item-title">
                 <h3>{value.title}</h3>
               </div>

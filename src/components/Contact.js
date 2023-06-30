@@ -32,14 +32,23 @@ const Contact = () => {
               <Label for="name">Name</Label>
             </FormGroup>
             <FormGroup floating>
-              <Input id="name" name="name" placeholder="Name" type="textarea" />
-              <Label for="name">Message</Label>
+              <Input id="email" name="email" placeholder="Email" type="email" />
+              <Label for="email">Email</Label>
+            </FormGroup>
+            <FormGroup floating>
+              <Input
+                id="message"
+                name="message"
+                placeholder="Message"
+                type="textarea"
+              />
+              <Label for="message">Message</Label>
             </FormGroup>
           </Form>
         </ModalBody>
         <ModalFooter className="modal-header-footer">
-          <Button color="primary" onClick={toggle}>
-            Send Message
+          <Button color="danger" onClick={toggle}>
+            Send Email
           </Button>{" "}
           <Button color="secondary" onClick={toggle}>
             Cancel

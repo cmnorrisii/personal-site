@@ -1,15 +1,20 @@
 * {
   font-family: "Bebas Neue", sans-serif;
 }
+p {
+  font-family: "Cantarell", sans-serif;
+}
 nav {
   font-size: x-large;
   padding-inline: 50px;
   background-color: rgb(52, 35, 166);
   font-size: 30px;
+  letter-spacing: 2px;
 }
 nav .navbar-brand {
   padding-inline: 50px;
   font-size: 42px;
+  letter-spacing: 2px;
 }
 .site-body {
   padding-top: 50px;
@@ -36,19 +41,23 @@ nav .navbar-brand {
   background-color: rgb(52, 35, 166);
   color: white;
   margin-top: 75px;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.6);
+  letter-spacing: 2px;
 }
 .about-me {
   padding-block: 75px;
   margin-inline: 15%;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.6);
 }
 p {
-  font-size: 36px;
+  font-size: 25px;
 }
 .bio {
   margin-inline: 15%;
   border: 1px solid black;
   padding: 2.5%;
   background-color: white;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.6);
 }
 .tech-stack {
   display: flex;
@@ -59,6 +68,7 @@ p {
   border: 1px solid black;
   padding: 2.5%;
   background-color: white;
+  box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.6);
 }
 .tech-stack-item {
   display: flex;
@@ -69,6 +79,10 @@ p {
 .tech-stack-item-image {
   width: 125px;
   height: 125px;
+  transition: box-shadow 0.4s linear;
+}
+.tech-stack-item-image:hover {
+  box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.6);
 }
 .projects {
   display: flex;
@@ -77,18 +91,31 @@ p {
   justify-content: center;
   margin-inline: 15%;
   border: 1px solid black;
-  padding: 2.5%;
+  padding-inline: 2%;
   background-color: white;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.6);
 }
 .projects-item {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
   padding: 2.5%;
 }
 .projects-item-gif {
-  width: 90%;
-  height: 90%;
+  width: 70%;
+  height: 70%;
+  border-radius: 5px;
+  padding-inline: 5px;
+}
+.projects-info {
+  padding-inline: 40px;
+}
+.projects-info h3 {
+  text-align: center;
+}
+.projects-info p {
+  font-size: 20px;
 }
 .modal-header-footer {
   background-color: rgb(52, 35, 166);
